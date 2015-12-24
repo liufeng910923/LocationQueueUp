@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@drawable/tijaobutton1" android:state_pressed="true"/>
+    <!-- not selected -->
+    <item android:drawable="@drawable/tijaobutton" />
+
+</selector>
+<!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/drawable/bg_feedback.xml -->

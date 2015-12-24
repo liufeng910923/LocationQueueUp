@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/maplittle"
+    android:orientation="horizontal"
+    android:paddingTop="2dp" >
+
+    <ImageView
+        android:id="@+id/marker_view_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/map_marker_fan_logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/marker_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_horizontal"
+            android:text="有家川菜"
+            android:textColor="#000000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/marker_view_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/marker_view_title"
+            android:layout_marginLeft="6dp"
+            android:text="20"
+            android:textColor="#f26d20"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/marker_view_num"
+            android:layout_toRightOf="@id/marker_view_num"
+            android:text="人排队"
+            android:textColor="#999999"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/layout/map_marker_view.xml -->

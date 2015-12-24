@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbf8f1"
+    android:scrollbarStyle="outsideOverlay" >
+
+    <RelativeLayout
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ll_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_back"
+            android:onClick="backBtn" >
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_logo_back" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dip"
+                android:layout_marginBottom="6dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_topline" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商家信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_guanzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/bg_back"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/qxguanzhutb" />
+
+            <Button
+                android:id="@+id/focus_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dip"
+                android:background="@null"
+                android:text="关注"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fbf8f1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:background="#fbf8f1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5.0dip" >
+
+                <RelativeLayout
+                    android:layout_width="100dip"
+                    android:layout_height="70dip" >
+
+                    <ImageView
+                        android:id="@+id/nearby_image"
+                        style="@style/driver_picture" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/nearby_stars_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:gravity="center"
+                            android:textSize="15.0sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/nearby_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/nearby_stars_level"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="呷哺呷哺"
+                            android:textColor="#000"
+                            android:textSize="17.0sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5.0dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/nearby_queueup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="排队人数："
+                            android:textColor="#f26d20"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/ny_idCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/nearby_queueup"
+                            android:textColor="#ff666666"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fbf8f1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fbf8f1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:text="餐厅介绍"
+                    android:textColor="#f26d20"
+                    android:textSize="17.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/companyintroduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/login_edit_normal"
+                android:gravity="center_vertical"
+                android:text="以川菜为主的餐厅,以川菜为主的餐厅,以川菜为主的餐厅,以川菜为主的餐厅,以川菜为主的餐厅,以川菜为主的餐厅,以川菜为主的餐厅,以川菜为主的餐厅,以川菜为主的餐厅以川菜为主的餐厅以川菜为主的餐厅"
+                android:textColor="#ff666666"
+                android:textSize="15.0sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fbf8f1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fbf8f1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:text="特色菜介绍"
+                    android:textColor="#f26d20"
+                    android:textSize="17.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/companyFeature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/login_edit_normal"
+                android:gravity="center_vertical"
+                android:text="馋嘴鸭，口水鸡，毛血旺，夫妻肺片，水煮鱼，龙抄手"
+                android:textColor="#ff666666"
+                android:textSize="15.0sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fbf8f1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fbf8f1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:text="餐厅信息"
+                    android:textColor="#f26d20"
+                    android:textSize="17.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/adr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/login_edit_normal"
+                android:gravity="center_vertical"
+                android:text="地址：北京市朝阳区西单商场6层"
+                android:textColor="#ff666666"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bohaobutton"
+                android:gravity="center"
+                android:text="132400432342"
+                android:textColor="#ffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

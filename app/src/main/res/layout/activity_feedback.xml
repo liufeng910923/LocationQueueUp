@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fbf8f1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/about_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top" >
+
+        <RelativeLayout
+            android:id="@+id/ll_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_back"
+            android:onClick="backBtn" >
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_logo_back" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_topline" 
+                android:layout_marginBottom="6dip"
+                android:layout_marginTop="6dip"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="我们的成长路上需要您的关怀！"
+            android:textColor="#f26d20"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@+id/edt_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/yijianbc"
+            android:gravity="top"
+            android:hint="@string/submit_tip"
+            android:inputType="textMultiLine"
+            android:padding="15.0dip"
+            android:textColor="#c1babc"
+            android:textSize="13.0sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/bg_feedback"
+                android:text="提交意见"
+                android:textColor="#ffffff"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

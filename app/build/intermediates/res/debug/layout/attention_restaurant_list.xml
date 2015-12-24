@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fbf8f1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top"
+        android:gravity="center_vertical" >
+
+      <!--  <LinearLayout
+            android:id="@+id/attent_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@+id/tiltle_attent"
+            android:orientation="vertical" /> --> 
+
+        <TextView
+            android:id="@+id/tiltle_attent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的关注"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_attent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_toRightOf="@+id/tiltle_attent"
+            android:background="@drawable/topline" />
+
+        <RelativeLayout
+            android:id="@+id/scanner"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/img_attent"
+            android:gravity="center" 
+            android:background="@drawable/bg_back">
+
+            <TextView
+                android:id="@+id/scantv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="扫一扫"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/scantv"
+                android:background="@drawable/saoyisao" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_layout" >
+
+        <com.queueup.ui.lib.XListView
+            android:id="@+id/attention_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#ddd"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none"
+            android:scrollingCache="false" />
+
+        <ProgressBar
+            android:id="@+id/attention_proBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/layout/attention_restaurant_list.xml -->

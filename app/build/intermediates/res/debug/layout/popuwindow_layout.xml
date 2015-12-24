@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popuwindow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="0.6"
+    android:background="#010101"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingBottom="6dp"  
+    android:paddingTop="6dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    tools:context="cn.sharesdk.demo.wxapi.WXEntryActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_share"
+        android:onClick="myclick"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/img_wechat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="9dp"
+            android:background="@drawable/bg_wechat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:text="微信分享" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_share"
+        android:onClick="myclick"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/img_friend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="9dp"
+            android:background="@drawable/bg_wechatfriend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="朋友圈分享" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_share"
+        android:onClick="myclick"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/img_sina"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="9dp"
+            android:background="@drawable/bg_sinashare" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="新浪分享" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shortmeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_share"
+        android:onClick="myclick"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/img_msg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="9dp"
+            android:background="@drawable/bg_shortmsg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="短信分享" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/layout/popuwindow_layout.xml -->

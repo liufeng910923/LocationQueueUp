@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/maintabs_rlhome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-12dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/mainTabs_radio_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tabar_attention" />
+
+                <TextView
+                    style="@style/mainTabs_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainTabs_radio_home"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/home"
+                    android:textColor="@drawable/tabhost_text_color" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/mainTabs_radio_line_one"
+                android:layout_width="1.5dp"
+                android:layout_height="58dp"
+                android:background="@drawable/fgxt" >
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/maintabs_rlmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-12dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/mainTabs_radio_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tabar_nearby_default" />
+
+                <TextView
+                    style="@style/mainTabs_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainTabs_radio_msg"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/message"
+                    android:textColor="@drawable/tabhost_text_color" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/mainTabs_radio_line_two"
+                android:layout_width="1.5dp"
+                android:layout_height="58dp" >
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/maintabs_rlselfinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-12dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/mainTabs_radio_selfInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tabar_coupon_default" />
+
+                <TextView
+                    style="@style/mainTabs_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainTabs_radio_selfInfo"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/me"
+                    android:textColor="@drawable/tabhost_text_color" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/mainTabs_radio_line_three"
+                android:layout_width="1.5dp"
+                android:layout_height="58dp" >
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/maintabs_rlmore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-12dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/mainTabs_radio_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tabar_more_default" />
+
+                <TextView
+                    style="@style/mainTabs_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainTabs_radio_more"
+                    android:layout_centerInParent="true"
+                    android:text="@string/more"
+                    android:textColor="@drawable/tabhost_text_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/maintab_toolbar_bg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/mainTabs_radio_home"
+                style="@style/mainTabs_radio"
+                android:button="@null"
+                android:drawableTop="@drawable/chat_index_btn"
+                android:text="@string/home"
+                android:textColor="@drawable/tabhost_text_color" />
+
+            <View
+                android:id="@+id/mainTabs_radio_line_one"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/fgxo"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/mainTabs_radio_msg"
+                style="@style/mainTabs_radio"
+                android:button="@null"
+                android:drawableTop="@drawable/chat_message_btn"
+                android:text="@string/message"
+                android:textColor="@drawable/tabhost_text_color" />
+
+            <View
+                android:id="@+id/mainTabs_radio_line_two"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/fgxo"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/mainTabs_radio_selfInfo"
+                style="@style/mainTabs_radio"
+                android:button="@null"
+                android:drawableTop="@drawable/chat_me_btn"
+                android:text="@string/me"
+                android:textColor="@drawable/tabhost_text_color" />
+
+            <View
+                android:id="@+id/mainTabs_radio_line_three"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/fgxo"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/mainTabs_radio_more"
+                style="@style/mainTabs_radio"
+                android:button="@null"
+                android:drawableTop="@drawable/chat_more_btn"
+                android:text="@string/more"
+                android:textColor="@drawable/tabhost_text_color" />
+        </RadioGroup> -->
+    </LinearLayout>
+
+</TabHost><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/layout/main.xml -->

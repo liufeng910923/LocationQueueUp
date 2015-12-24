@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fbf8f1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/list_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@drawable/fanhuichakan"
+        android:gravity="center_vertical"
+        android:onClick="backBtn" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="返回查看"
+            android:textColor="#ffffff" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_detail"
+        android:layout_marginTop="25dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginBottom="15dip"
+        android:background="#fbf8f1"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/colock" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/img"
+            android:text="2014_07_08"
+            android:textColor="#ffa004"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.queueup.ui.lib.XListView
+        android:id="@+id/lv_list_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/time_ly"
+        android:background="#fbf8f1"
+        android:cacheColorHint="#00000000"
+        android:divider="#ddd"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:scrollingCache="false" />
+</RelativeLayout><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/layout/queue_up_detail.xml -->

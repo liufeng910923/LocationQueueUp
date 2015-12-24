@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#00ffffff" />
+
+    <corners android:radius="25px" />
+
+    <stroke
+        android:width="2px"
+        android:color="#80d1d1d1" />
+
+</shape><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/drawable/baidu_map_sousuo_bg.xml -->

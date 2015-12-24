@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationOverlayDemo" >
+
+    <RelativeLayout
+        android:id="@+id/baidu_map_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/map_hander_search_bg"
+        android:paddingLeft="10dp" >
+		
+        <Button
+            android:id="@+id/baidu_map_button"
+            android:layout_width="20dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/baidu_map_mic_0" />
+        
+         <TextView
+            android:id="@+id/baidu_map_geocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="搜索"
+            android:textColor="#f26d20"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/baidu_map_geocode_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/baidu_map_button"
+            android:layout_toLeftOf="@id/baidu_map_geocode"
+            android:background="@drawable/baidu_map_sousuo_bg"
+            android:ems="10"
+            android:hint="输入城市地点关键词"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:visibility="visible" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/baidu_map_geocode_talk_key"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/baidu_map_button"
+            android:layout_toLeftOf="@id/baidu_map_geocode"
+            android:background="@drawable/anzhu1"
+            android:text="按住   说话"
+            android:textSize="16dp"
+            android:textColor="#afafaf"
+            android:visibility="gone" />
+
+       
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/baidu_map_search" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/baidu_map_bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/baidu_map_roadcondition_line"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/baidu_map_the_road_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/baidu_map_roadcondition_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_icon_roadcondition_off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/baidu_map_location_line"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/baidu_map_location_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/baidu_map_location_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_icon_location" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/layout/activity_location_baidu_map.xml -->

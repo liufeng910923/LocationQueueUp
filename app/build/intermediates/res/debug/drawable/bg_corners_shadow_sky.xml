@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="5.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="10.0dip" />
+            <gradient android:startColor="@color/black" android:endColor="@color/background1" android:angle="270.0" android:centerColor="@color/black" />
+        </shape>
+    </item>
+    <item android:bottom="3.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="5.0dip" />
+            <solid android:color="@color/sky" />
+        </shape>
+    </item>
+</layer-list><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/drawable/bg_corners_shadow_sky.xml -->

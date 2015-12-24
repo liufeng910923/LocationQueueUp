@@ -1,0 +1,131 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    
+    <style name="black" parent="@android:style/Theme.Black" />
+
+    <style name="page1_text" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">#b7aeb1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="MyDialogStyleTop">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="MyDialogStyleShare" parent="android:Theme.Dialog" >
+        <item name="android:windowAnimationStyle">@style/AnimTop2</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->        
+     </style>
+     
+    <style name="AnimTop2" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/push_top_in2</item>
+        <item name="android:windowExitAnimation">@anim/push_top_out2</item>
+	</style>
+
+   <!--  <style name="MyDialogStyleTop" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowFrame">@null</item>
+        边框
+        <item name="android:windowIsFloating">true</item>
+        是否浮现在activity之上
+        <item name="android:windowNoTitle">true</item>
+        无标题
+        <item name="android:windowBackground">@android:color/transparent</item>
+        背景透明
+        <item name="android:backgroundDimEnabled">true</item>
+        模糊
+    </style> -->
+
+    <style name="Anim_style2" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>
+    </style>
+
+    <style name="AnimFade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/hold</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="driver_picture">
+        <item name="android:padding">1.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:layout_width">@dimen/driver_pic_width</item>
+        <item name="android:layout_height">@dimen/driver_pic_height</item>
+        
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+        <item name="android:minHeight">16.0dip</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="driverRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">22.0dip</item>
+        <item name="android:progressDrawable">@drawable/driverrating_bg</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="bottom_linview">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_selectot_corners_shadow</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+        <style name="mainTabs_radio">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">4.0dp</item>
+        <item name="android:paddingBottom">2.0dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    
+           <style name="first_Tabs_radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">4.0dp</item>
+        <item name="android:paddingBottom">4.0dp</item>
+        <item name="android:paddingLeft">10.0dp</item>
+        <item name="android:paddingRight">10.0dp</item>
+        <item name="android:button">@null</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fbf8f1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看更多"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_layout"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/about_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_more"
+            android:gravity="center_vertical"
+            android:onClick="doClick" >
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/logo_guanyuwomen" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:layout_toRightOf="@+id/iv1"
+                android:text="关于我们"
+                android:textColor="#737372"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dip"
+                android:src="@drawable/xiangyou" />
+        </RelativeLayout>
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/line" -->
+        <!-- android:scaleType="fitXY" /> -->
+
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:gravity="center_vertical" > -->
+
+
+        <!-- <Button -->
+        <!-- android:id="@+id/version_update" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="45dp" -->
+        <!-- android:background="@drawable/btn_style_white" -->
+        <!-- android:onClick="doClick" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/iv5" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="5dip" -->
+        <!-- android:src="@drawable/logo_banbengenxin" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/update" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="12dip" -->
+        <!-- android:layout_toRightOf="@+id/iv5" -->
+        <!-- android:text="版本更新" -->
+        <!-- android:textColor="#737372" -->
+        <!-- android:textSize="16sp" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:paddingRight="5dip" -->
+        <!-- android:src="@drawable/xiangyou" /> -->
+        <!-- </RelativeLayout> -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/homeline" />
+
+        <RelativeLayout
+            android:id="@+id/idea_feed_back"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_more"
+            android:gravity="center_vertical"
+            android:onClick="doClick" >
+
+            <ImageView
+                android:id="@+id/iv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/logo_yijianfankui" />
+
+            <TextView
+                android:id="@+id/feed_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:layout_toRightOf="@+id/iv6"
+                android:text="意见反馈"
+                android:textColor="#737372"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dip"
+                android:src="@drawable/xiangyou" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/homeline" />
+
+        <RelativeLayout
+            android:id="@+id/share"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_more"
+            android:onClick="doClick" >
+
+            <ImageView
+                android:id="@+id/iv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/logo_yaoqingfenxinag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:layout_toRightOf="@+id/iv7"
+                android:text="邀请分享"
+                android:textColor="#737372"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dip"
+                android:src="@drawable/xiangyou" />
+        </RelativeLayout>
+
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/homeline" />
+
+        <RelativeLayout
+            android:id="@+id/more_back"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_more"
+            android:onClick="doClick" >
+
+            <ImageView
+                android:id="@+id/iv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/logo_tuichu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:layout_toRightOf="@+id/iv8"
+                android:text="退出登入"
+                android:textColor="#737372"
+                android:textSize="16sp" />
+
+           
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/homeline" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/layout/moreview.xml -->

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#fbf8f1"
+    >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+       	android:background="@drawable/top"
+         >
+         
+        <TextView 
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收件人"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+           	android:layout_marginLeft="12dp"
+            />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit"
+            android:layout_toRightOf="@id/textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/login_edit_normal"
+            android:completionThreshold="1"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <!--
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_white"
+            android:onClick="select_doClick_info"
+            android:text="全选"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:stretchColumns="2" >
+
+            <TableRow android:gravity="center_horizontal"
+                android:background="#eee6d3" >
+				
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_feedback"
+                    android:text="确定"
+                    android:textColor="#fff"
+                    android:textSize="18dip"
+                   
+                     />
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_feedback"
+                    android:text="返回"
+                    android:textColor="#fff"
+                    android:textSize="18dip"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text="对不起,未能查找到手机号!"
+        android:textColor="#AFAFAF"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <ListView
+       
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/top"
+        android:drawSelectorOnTop="false"
+        android:nextFocusUp="@+id/edit"
+        android:cacheColorHint="#00000000" />
+
+</RelativeLayout>

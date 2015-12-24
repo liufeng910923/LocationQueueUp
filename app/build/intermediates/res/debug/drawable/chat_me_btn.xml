@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/tabar_coupon" android:state_checked="true"/>
+    <!-- not selected -->
+    <item android:drawable="@drawable/tabar_coupon_default"/>
+
+</selector><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/drawable/chat_me_btn.xml -->

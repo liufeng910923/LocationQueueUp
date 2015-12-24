@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/first_tabbar_bg_checked_one" android:state_checked="true"/>
+    <!-- not selected -->
+    <item android:drawable="@drawable/first_tabbar_bg_unchecked_one"/>
+
+</selector><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/drawable/first_tabbar_ont_bg.xml -->

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/driver_list_item_back"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/restaurant_img_icon"
+        style="@style/driver_picture" />
+
+    <LinearLayout
+        android:id="@+id/restaurant_layout_mind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/restaurant_text_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="呷哺呷哺"
+                android:textColor="@color/grey"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/restaurant_flg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/restaurant_text_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="距离：300米"
+                android:textColor="@color/grey"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/restaurant_text_queueup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/restaurant_text_distance"
+                android:gravity="center"
+                android:text="排队：3人"
+                android:textColor="@color/grey"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/restaurant_imageView1"
+                android:layout_width="8.0dip"
+                android:layout_height="13.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5.0dip"
+                android:src="@drawable/arrow_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/restaurant_text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="北京市西城区西单商场3层"
+            android:textColor="@color/grey"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/layout/restaurant_item.xml -->

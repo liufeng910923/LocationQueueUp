@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/bg_corners_shadow_sky" />
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="#ff009ad3" android:endColor="#ff000000" android:type="radial" android:gradientRadius="1000.0" />
+            <stroke android:width="2.0dip" android:color="#ff009ad3" />
+            <padding android:left="10.0dip" android:top="10.0dip" android:right="10.0dip" android:bottom="10.0dip" />
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:drawable="@drawable/bg_corners_shadow_gry" />
+</selector><!-- From: file:/C:/Users/Administrator/AndroidStudioProjects/LocationQueueUp/app/src/main/res/drawable/button_selectot_corners_shadow.xml -->

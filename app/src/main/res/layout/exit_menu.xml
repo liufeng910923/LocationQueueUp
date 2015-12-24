@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exit_layout"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="#fbf8f1"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="提示"
+        android:textStyle="bold"
+        android:textColor="#f26d20"
+        android:textSize="20sp" />
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/exitxian"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="您将退出排队客户端,请确认."
+        android:textColor="#737372"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/exitsure"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tcsure"
+            android:gravity="center"
+            android:onClick="exitclick"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/exitcancel"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_tcqx"
+            android:gravity="center"
+            android:onClick="exitclick"
+          
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

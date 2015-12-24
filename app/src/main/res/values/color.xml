@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="gray4">#82807e</color>
+    <color name="white">#ffffff</color>
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="blue">#836FFF</color>
+    <color name="black">#000000</color>
+    <color name="mapdw">#d9dad9</color>
+    <color name="mapdw1">#fffffe</color>
+    <!-- <color name="red">#bf242a</color> -->
+    <color name="transparent">#00000000</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="trans">#50000000</color>
+    <color name="grey">#ff58616d</color>
+	<color name="gray2">#766d6d</color>
+    <color name="red">#fe0202</color>
+    <color name="background">#e5e5e5</color>
+    <color name="background1">#fff2f2f2</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="text_gray">#4F4F4F</color>
+    <color name="green">#00FF00</color>
+    <color name="grey21">#363636</color>
+    <color name="gold">#b89766</color>
+    <color name="page_back">#ffe9e9e9</color>
+    <color name="pressed_color">#ffe9e9e9</color>
+    <color name="btn_selector">#de9021</color>
+    <color name="sky">#ff00bbff</color>
+    <color name="btn_enable">#ffa6a6a6</color>
+    <color name="diving">#ffdadada</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="gray3">#2e2e2e</color>
+    <color name="result_view">#b0000000</color>
+    <color name="gray">#d1d1d1</color>
+    <color name="list">#f4eedf</color>
+    <color name="yin">#999999</color>
+    <color name="yellow">#f26d20</color>
+    <color name="feedbackcolor">#de651e</color>
+    <color name="more">#eae1cd</color>
+    <color name="more1">#fbf8f1</color>
+    <color name="bakc">#c7591a</color>
+    <color name="YouHuiJuanTitleTextColor1">#333333</color>
+    <color name="YouHuiJuanTitleTextColor2">#f26d20</color>
+    <color name="huibai">#e6d3d3</color>
+
+</resources>
